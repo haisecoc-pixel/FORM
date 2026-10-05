@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Member User ID Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form-card">
+
+            <header class="header">
+                <h1>Online Member User ID Registration</h1>
+                <p>Create your member account securely and conveniently.</p>
+            </header>
+
+            <main class="form-content">
+
+                <div class="required-note">
+                    <strong>* Required Field</strong>
+                    <br>
+                    Please provide the information requested below.
+                </div>
+
+                <form id="registrationForm" novalidate>
+
+                    <!-- ACCOUNT INFORMATION -->
+                    <h2 class="section-title">Account Information</h2>
+
+                    <p class="instruction">
+                        Please supply the following information as reported
+                        to the Social Security System.
+                    </p>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="crn" class="required">
+                                CRN / SS Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="crn"
+                                name="crn"
+                                placeholder="Enter your CRN / SS Number"
+                                maxlength="12"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email" class="required">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="warning">
+                            If your email address is other than Yahoo.com,
+                            kindly inform your network administrator not to
+                            block mail from SSS.
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="confirmEmail" class="required">
+                                Confirm Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="confirmEmail"
+                                name="confirmEmail"
+                                placeholder="Re-enter your email address"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="password" class="required">
+                                Password
+                            </label>
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                minlength="8"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="help-text">
+                            Password must contain at least 8 characters.
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="userId" class="required">
+                                Preferred User ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="userId"
+                                name="userId"
+                                placeholder="Example: Juan_Cruz1234"
+                                maxlength="20"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="help-text">
+                            Must be 8–20 characters. First character must be
+                            alphabetic. Only letters, numbers, and underscores
+                            are allowed.
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="confirmUserId" class="required">
+                                Confirm Preferred User ID
+                            </label>
+
+                            <input
+                                type="text"
+                                id="confirmUserId"
+                                name="confirmUserId"
+                                placeholder="Re-enter your preferred User ID"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- PERSONAL INFORMATION -->
+                    <h2 class="section-title">
+                        Personal Information
+                    </h2>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="lastName" class="required">
+                                Surname / Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                name="lastName"
+                                placeholder="Enter surname"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="firstName" class="required">
+                                Given Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                name="firstName"
+                                placeholder="Enter given name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="middleName">
+                                Middle Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="middleName"
+                                name="middleName"
+                                placeholder="Enter middle name"
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="birthDate" class="required">
+                                Date of Birth
+                            </label>
+
+                            <input
+                                type="date"
+                                id="birthDate"
+                                name="birthDate"
+                                required
+                            >
+                        </div>
+
+                    </div>
+
+
+                    <!-- MAILING ADDRESS -->
+                    <h2 class="section-title">
+                        Mailing Address
+                    </h2>
+
+                    <div class="address-grid">
+
+                        <label for="address1">
+                            Room / Floor / Unit No. & Building Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="address1"
+                            name="address1"
+                            placeholder="Building / unit details"
+                        >
+
+
+                        <label for="address2">
+                            House / Lot & Block No.
+                        </label>
+
+                        <input
+                            type="text"
+                            id="address2"
+                            name="address2"
+                            placeholder="House / lot / block number"
+                        >
+
+
+                        <label for="street">
+                            Street
+                        </label>
+
+                        <input
+                            type="text"
+                            id="street"
+                            name="street"
+                            placeholder="Street name"
+                        >
+
+
+                        <label for="subdivision">
+                            Subdivision
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subdivision"
+                            name="subdivision"
+                            placeholder="Subdivision / village"
+                        >
+
+
+                        <label>
+                            Location Type
+                        </label>
+
+                        <div class="location-options">
+
+                            <label class="radio-label">
+                                <input
+                                    type="radio"
+                                    name="locationType"
+                                    value="metro"
+                                    checked
+                                >
+
+                                Metro Manila
+                            </label>
+
+
+                            <label class="radio-label">
+                                <input
+                                    type="radio"
+                                    name="locationType"
+                                    value="province"
+                                >
+
+                                Province
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BUTTONS -->
+                    <div class="actions">
+
+                        <button
+                            type="button"
+                            class="btn-clear"
+                            id="clearBtn"
+                        >
+                            Clear Form
+                        </button>
+
+
+                        <button
+                            type="submit"
+                            class="btn-submit"
+                        >
+                            Register
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="success-message"
+                        id="successMessage"
+                    >
+                        ✓ Your registration form has been successfully
+                        validated.
+                    </div>
+
+                </form>
+
+            </main>
+
+        </div>
+
+
+        <div class="footer">
+            Online Member Registration • Please review your information
+            before submitting.
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
